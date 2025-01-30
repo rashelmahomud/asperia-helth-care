@@ -5,7 +5,7 @@ import Button from "../shared/Button";
 
 const Oncology = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-20 lg:p-32 p-3 bg-gray-100 justify-center">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-20 lg:p-32 p-3 bg-gray-100 justify-center mt-10">
       <div className="relative">
         <Image
           className="rounded-lg ml-10 mt-12"
