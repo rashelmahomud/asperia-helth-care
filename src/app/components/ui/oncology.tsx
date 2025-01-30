@@ -2,6 +2,7 @@ import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Button from "../shared/Button";
+import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 const Oncology = () => {
   return (
@@ -65,10 +66,17 @@ const Oncology = () => {
         <div className="flex my-3 gap-5">
           <Button>discover more</Button>
 
-          <div>
-            <p className="font-semibold">+8801835199061</p>
+          <div className="flex gap-3 text-xl order-last ">
+            <FontAwesomeIcon
+              icon={faPhoneVolume}
+              className="w-8 text-iconBg"
+            />
 
-            <span className="text-sm">hotline number</span>
+            <div className="">
+              <p className="font-semibold">+8801835199061</p>
+
+              <span className="text-sm">hotline number</span>
+            </div>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Header = () => {
       <div className="flex gap-5 justify-between lg:px-32 p-5">
         <Image src={"/asperia/logo.png"} width={150} height={150} alt="logo" />
         <div className="flex gap-3 text-xl order-last ">
-          <FontAwesomeIcon icon={faPhoneVolume} className="w-8 text-primary" />
+          <FontAwesomeIcon icon={faPhoneVolume} className="w-8 text-iconBg" />
 
           <div className="">
             <p className="font-semibold">+8801835199061</p>
