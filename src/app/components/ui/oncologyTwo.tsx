@@ -66,10 +66,10 @@ const OncologyTwo = () => {
         <div className="flex my-3 gap-5">
           <Button>discover more</Button>
 
-          <div className="flex gap-3 text-xl order-last ">
+          <div className="flex items-center gap-3 text-xl order-last ">
             <FontAwesomeIcon
               icon={faPhoneVolume}
-              className="w-8 text-iconBg"
+              className="w-8 text-iconBg "
             />
 
             <div className="">

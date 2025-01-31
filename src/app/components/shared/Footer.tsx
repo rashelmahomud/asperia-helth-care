@@ -99,12 +99,11 @@ const Footer = () => {
                 required
               />
             </div>
-            <div className="flex gap-3 text-white text-xl">
+            <div className="flex items-center gap-3 text-white text-xl">
               <FontAwesomeIcon
                 icon={faPhoneVolume}
                 className="w-8 text-primary"
               />
-
               <div>
                 <p className="font-semibold">+8801835199061</p>
 
