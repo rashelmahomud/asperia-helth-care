@@ -6,10 +6,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  type NavLInk = {
+    link: string;
+    name: string;
+  };
+  const links: NavLInk[] = [
+    { link: "/", name: "Home" },
+    { link: "/packages", name: "Packages" },
+    { link: "/specialties", name: "Specialties" },
+    { link: "/cancerCare", name: "Cancer Care" },
+    { link: "/doctors", name: "Doctors" },
+  ];
   return (
     <div className="">
       <div className="flex gap-5 justify-between lg:px-32 p-5">
-        <Image src={"/asperia/logo.png"} width={150} height={150} alt="logo" />
+        <Link href={"/"}>
+          <Image
+            src={"/asperia/logo.png"}
+            width={150}
+            height={150}
+            alt="logo"
+          />
+        </Link>
         <div className="flex gap-3 text-xl order-last ">
           <FontAwesomeIcon icon={faPhoneVolume} className="w-8 text-iconBg" />
 
@@ -18,30 +36,20 @@ const Header = () => {
 
             <span className="text-sm">hotline number</span>
           </div>
-          </div>
-          <div>
-            <ul className="flex justify-center items-center gap-5 bg-gray-100 rounded-lg pl-5 font-semibold">
-              <li>
-                <Link href={"/"}>Home</Link>
+        </div>
+        <div>
+          <ul className="flex justify-center items-center gap-5 bg-gray-100 rounded-lg pl-5 font-semibold">
+            {links.map((link) => (
+              <li key={link.name}>
+                <Link href={link.link}>{link.name}</Link>
               </li>
-              <li>
-                <Link href={"/"}>Packages</Link>
-              </li>
-              <li>
-                <Link href={"/"}>Specialties </Link>
-              </li>
-              <li>
-                <Link href={"/"}>Cancer Care</Link>
-              </li>
-              <li>
-                <Link href={"/"}>Doctors</Link>
-              </li>
-              <li>
-                <Button nav>Appoinment</Button>
-              </li>
-            </ul>
-          </div>
-        
+            ))}
+
+            <li>
+              <Button nav>Appoinment</Button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
