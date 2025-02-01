@@ -4,7 +4,7 @@ import OncologyTwo from "./components/ui/oncologyTwo";
 
 export default function Home() {
   return (
-   <div>
+   <div className="bg-gray-50">
     <Oncology />
     <OncologyTwo />
   <ForDoctor />
