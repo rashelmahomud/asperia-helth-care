@@ -25,7 +25,7 @@ const Header = () => {
 const activeClass = "bg-blue-500 text-white";
   return (
     <div className="">
-      <div className="flex gap-5 justify-between lg:px-32 p-5">
+      <div className="lg:flex gap-5 justify-between lg:px-32 p-5">
   
           <Image
             src={"/asperia/logo.png"}
@@ -34,8 +34,8 @@ const activeClass = "bg-blue-500 text-white";
             alt="logo"
           />
        
-        <div className="flex items-center gap-3 text-xl order-last ">
-          <FontAwesomeIcon icon={faPhoneVolume} className="w-8 text-iconBg" />
+        <div className="flex items-center gap-3 text-xl order-last">
+          <Link href={'/'}><FontAwesomeIcon icon={faPhoneVolume} className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"/></Link>
 
           <div className="">
             <p className="font-semibold">+8801835199061</p>

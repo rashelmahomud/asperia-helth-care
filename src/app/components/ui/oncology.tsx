@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Button from "../shared/Button";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const Oncology = () => {
   return (
@@ -66,18 +67,15 @@ const Oncology = () => {
         <div className="flex my-3 gap-5">
           <Button>discover more</Button>
 
-          <div className="flex items-center gap-3 text-xl order-last ">
-            <FontAwesomeIcon
-              icon={faPhoneVolume}
-              className="w-8 text-iconBg"
-            />
+          <div className="flex items-center gap-3 text-xl order-last">
+          <Link href={'/'}><FontAwesomeIcon icon={faPhoneVolume} className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"/></Link>
 
-            <div className="">
-              <p className="font-semibold">+8801835199061</p>
+          <div className="">
+            <p className="font-semibold">+8801835199061</p>
 
-              <span className="text-sm">hotline number</span>
-            </div>
+            <span className="text-sm">hotline number</span>
           </div>
+        </div>
         </div>
       </div>
     </div>

@@ -16,8 +16,8 @@ const ForDoctor = () => {
             icon={faBookOpenReader}
             className="w-16 h-16 text-white"
           />
-          <Image src={'/asperia/tracking-shape-3.png'} width={200} height={200} alt="image" className="absolute top-15 left-20 opacity-70 ml-10 z-2 animate-bounce"/>
-          <Image src={'/asperia/tracking-shape-3.png'} width={200} height={200} alt="image" className="absolute top-20 opacity-80 z-2 animate-bounce"/>
+          <Image src={'/asperia/tracking-shape-3.png'} width={200} height={200} alt="image" className="absolute top-15 left-20 opacity-70 ml-10 z-2  animate-pulse" />
+          <Image src={'/asperia/tracking-shape-3.png'} width={200} height={200} alt="image" className="absolute top-20 opacity-80 z-2 animate-ping"/>
           
           </div>
           <div>
@@ -27,7 +27,9 @@ const ForDoctor = () => {
             </h1>
           </div>
         </div>
-        <Button foot>Contact</Button>
+        <Button foot >Contact</Button>
+        <Image src={'/asperia/tracking-shape-3.png'} width={200} height={200} alt="image" className="absolute top-15 right-0 opacity-40 ml-10 z-2 animate-spin"/>
+          <Image src={'/asperia/tracking-shape-3.png'} width={200} height={200} alt="image" className="absolute top-20 right-10 opacity-80 z-2 animate-ping z-10"/>
       </div>
     </div>
   );
