@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div className="bg-[url('/asperia/site-footer-bg.png')] ">
       <div className="bg-[#16243d]">
-        <div className="grid grid-cols-4 gap-10  lg:p-32 mx-auto ">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 p-3 lg:p-32 mx-auto ">
           <div>
             <Image
               className=""

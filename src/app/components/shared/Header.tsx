@@ -44,7 +44,7 @@ const activeClass = "bg-blue-500 text-white";
           </div>
         </div>
         <div>
-          <ul className="flex justify-center items-center gap-5 bg-gray-100 rounded-lg pl-5 font-semibold">
+          <ul className="lg:flex justify-center items-center gap-5 bg-gray-100 rounded-lg pl-5 font-semibold">
             {links.map((link) => (
               <li key={link.name} >
                 <Link href={link.link} className={`${defaultClass} ${pathName === link.link ? activeClass : ''}`}>{link.name}</Link>
