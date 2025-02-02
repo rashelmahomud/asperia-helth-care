@@ -64,7 +64,7 @@ const Oncology = () => {
             Affordable day care packages
           </li>
         </ul>
-        <div className="lg:flex my-3 gap-5">
+        <div className="lg:flex my-3 gap-5 items-center">
           <Button>discover more</Button>
 
           <div className="flex items-center gap-3 text-xl order-last">
