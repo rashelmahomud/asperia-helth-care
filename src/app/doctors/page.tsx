@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { GetDoctor } from "../lib/api";
+import Image from "next/image";
 
 const Doctors = () => {
   const doctors = GetDoctor();
@@ -8,21 +9,41 @@ const Doctors = () => {
     return <p className="text-center text-lg">Loading data ...</p>;
   }
   if (doctors.length === 0) {
-    return <p className="text-center text-lg text-red-500 font-semibold my-2">Loading data ...</p>;
+    return (
+      <p className="text-center text-lg text-red-500 font-semibold my-2">
+        Loading data ...
+      </p>
+    );
   }
 
   return (
-    <div className="text-center my-10">
-      <h1 className="text-4xl">Meet Our Specialist Doctors</h1>
-      <div className="grid grid-cols-3 my-5">
-        {doctors.map((doctor, index) => (
-          <div key={index}>
-            <Link href={`/doctors/${doctor.id}`}>
-              <h2>{doctor.name}</h2>
-            </Link>
-            <p>{doctor.title}</p>
-          </div>
-        ))}
+    <div className="relative text-center my-10 lg:p-32">
+      <div className="absolute inset-0 bg-[url('/asperia/team-one-shape-1.png')] bg-no-repeat bg-right-top opacity-30 animate-custom-bounce"></div>
+      <div className="relative z-10">
+        <h1 className="lg:text-4xl my-10 font-semibold text-gray-700">
+          Meet Our Specialist <br /> Doctors
+        </h1>
+        <div className="grid lg:grid-cols-4 my-5 lg:gap-32">
+          {doctors.map((doctor, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <Image
+                className="rounded-lg"
+                src={"/asperia/2088.jpg"}
+                width={200}
+                height={200}
+                alt="doctor image"
+              />
+              <div className="mt-6 lg:p-4 text-left">
+                <Link href={`/doctors/${doctor.id}`}>
+                  <h2 className="text-2xl font-semibold text-gray-700">
+                    {doctor.name}
+                  </h2>
+                </Link>
+                <p className="text-primary">{doctor.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

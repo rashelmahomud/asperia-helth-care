@@ -7,6 +7,21 @@ module.exports = {
           lightText: '#97a2b7',
           iconBg: '#0ce0ff'
       },
+      keyframes: {
+        customBounce: {
+          "0%, 100%": {
+            transform: "translateX(-0.2%)",
+            // animationTimingFunction: "cubic-bezier(20, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateX(0)",
+            // animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+      },
+      animation: {
+        "custom-bounce": "customBounce 1s infinite",
+      },
     },
    
   },
