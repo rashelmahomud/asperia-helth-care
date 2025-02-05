@@ -1,30 +1,19 @@
 "use client";
-
+import { GetDoctor } from "@/app/lib/api";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
 
 const DetailPage = () => {
-  interface Doctor {
-    id: string
-    name: string;
-    title: string;
-  }
-  const [doctor, setDoctor] = useState<Doctor[]>([]);
-
   const { id: productId } = useParams();
-
+  const doctors = GetDoctor(); //api data
+  const doctorInfo = doctors?.find((doctor) => doctor.id.toString() === productId);
   
-  useEffect(() => {
-    fetch("/doctors.json")
-      .then((res) => res.json())
-      .then((data) => setDoctor(data));
-  }, [productId]);
-
-  const doctorInfo = doctor?.find((doc: Doctor) => doc.id.toString() === productId)
-  console.log(doctorInfo)
   if(!doctorInfo) {
-    return <h2>have a some issus for the data !</h2>
+    return <p>Loading data .....</p>
   }
+  if (!doctorInfo) {
+    return <h2>have a some issus for the data !</h2>;
+  }
+
 
   return (
     <div>
