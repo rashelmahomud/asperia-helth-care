@@ -1,3 +1,4 @@
+import Appoinment from "./components/shared/Appoinment";
 import ForDoctor from "./components/ui/forDoctor";
 import Oncology from "./components/ui/oncology";
 import OncologyTwo from "./components/ui/oncologyTwo";
@@ -9,6 +10,7 @@ export default function Home() {
       <Oncology />
       <OncologyTwo />
       <Doctors />
+      <Appoinment />
       <ForDoctor />
     </div>
   );
