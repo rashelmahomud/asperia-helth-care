@@ -25,7 +25,18 @@
         
     ]
 },
-    {"id": 2,"name": "ডাঃ সৈয়দা ইয়াসমীন আকতার ", "title": "এমবিবিএস, বিসিএস স্বাস্থ্য। এফসিপিএস (অবস্ ও গাইনী) কনসালটেন্ট (অবস্‌ ও গাইনী) ", "image": "https://i.ibb.co.com/xqXvKVtp/14518-yesmin.jpg"},
+    {"id": 2,"name": "ডাঃ সৈয়দা ইয়াসমীন আকতার ", "title": "এমবিবিএস, বিসিএস স্বাস্থ্য। এফসিপিএস (অবস্ ও গাইনী) কনসালটেন্ট (অবস্‌ ও গাইনী) ", "image": "https://i.ibb.co.com/xqXvKVtp/14518-yesmin.jpg",
+    "desc": [
+        "অনিয়মিত ঋতুস্রাব।",
+        "জরায়ু সমস্যা ও জরায়ু টিউমার।",
+        "স্তন সমস্যা।",
+        "বন্ধ্যাত্ব ও বাচ্চা ধারনে অক্ষম।",
+        "গর্ভবতী অবস্থায় সেবা ও ডেলিভারি বিশেষজ্ঞ এবং সার্জন।",
+        "মেয়েদের সকল ধরনের গোপন ও জটিল রোগ বিশেষজ্ঞ।"
+   
+        
+    ]},
+
     {"id": 3,"name": "Dr. Md. Mahabubul Alam Khandker ", "title": "MBBS, BCS (Health), FCPS (Medicine), MD (Neurology)", "image": "https://i.ibb.co.com/k2rKnP8M/76881.jpg"},
     {"id": 4,"name": "Dr. Ali Asgar Chowdhury", "title": "MBBS, BCS (Health), FCPS (Radiotherapy)", "image": "https://i.ibb.co.com/jk9Z6ZGX/97643.jpg"}
 

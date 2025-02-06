@@ -43,10 +43,10 @@ const DetailPage = () => {
           </h3>
           <h2>{doctorInfo.title}</h2>
           <h4 className="text-xl">যেসব রোগের চিকিৎসা করা হয়</h4>
-          <ul className="my-3">
-            {doctorInfo.desc.map((des, index) => (
-              <li key={index} className="my-2">
-                <FontAwesomeIcon icon={faCircleCheck} className="mr-3" />
+          <ul className="grid grid-flow-col lg:grid-rows-10 gap-2 my-2">
+            {doctorInfo?.desc?.map((des, index) => (
+              <li key={index} className="my-2 text-gray-700">
+                <FontAwesomeIcon icon={faCircleCheck} className="mr-3 text-iconBg hover:text-primary" />
                 {des}
               </li>
             ))}
