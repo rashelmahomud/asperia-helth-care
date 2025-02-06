@@ -1,4 +1,5 @@
 "use client";
+import Appoinment from "@/app/components/shared/Appoinment";
 import { GetDoctor } from "@/app/lib/api";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,38 +22,44 @@ const DetailPage = () => {
   }
 
   return (
-    <div className="flex gap-10 my-10">
-      <div className="bg-[url('/asperia/get-insuracne-two-shape-1.png')]">
-        <Image
-          className="rounded-full ml-16 p-10"
-          src={"/asperia/about-two-img-1.jpg"}
-          width={600}
-          height={600}
-          alt="doctor image"
-        />
-      </div>
+    <div>
+      <div className="flex gap-10 my-10">
+        <div className="bg-[url('/asperia/get-insuracne-two-shape-1.png')]">
+          <Image
+            className="rounded-full ml-16 p-10"
+            src={"/asperia/about-two-img-1.jpg"}
+            width={600}
+            height={600}
+            alt="doctor image"
+          />
+        </div>
 
-      <div className="relative">
-        <div className="absolute inset-0 bg-[url('/asperia/get-insuracne-two-shape-3.png')] bg-no-repeat bg-right-top opacity-10 animate-custom-bounce"></div>
-        <div className="relative p-10">
-          <h1 className="text-5xl text-gray-700 font-semibold">
-            {doctorInfo.name}
-          </h1>
-          <h3 className="text-xl font-semibold my-2">
-            মেডিসিন, লিভার ও পরিপাকতন্ত্র বিশেষজ্ঞ
-          </h3>
-          <h2>{doctorInfo.title}</h2>
-          <h4 className="text-xl">যেসব রোগের চিকিৎসা করা হয়</h4>
-          <ul className="grid grid-flow-col lg:grid-rows-10 gap-2 my-2">
-            {doctorInfo?.desc?.map((des, index) => (
-              <li key={index} className="my-2 text-gray-700">
-                <FontAwesomeIcon icon={faCircleCheck} className="mr-3 text-iconBg hover:text-primary" />
-                {des}
-              </li>
-            ))}
-          </ul>
+        <div className="relative">
+          <div className="absolute inset-0 bg-[url('/asperia/get-insuracne-two-shape-3.png')] bg-no-repeat bg-right-top opacity-10 animate-custom-bounce"></div>
+          <div className="relative p-10">
+            <h1 className="text-5xl text-gray-700 font-semibold">
+              {doctorInfo.name}
+            </h1>
+            <h3 className="text-xl font-semibold my-2">
+              মেডিসিন, লিভার ও পরিপাকতন্ত্র বিশেষজ্ঞ
+            </h3>
+            <h2>{doctorInfo.title}</h2>
+            <h4 className="text-xl">যেসব রোগের চিকিৎসা করা হয়</h4>
+            <ul className="grid grid-flow-col lg:grid-rows-10 gap-2 my-2">
+              {doctorInfo?.desc?.map((des, index) => (
+                <li key={index} className="my-2 text-gray-700">
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    className="mr-3 text-iconBg hover:text-primary"
+                  />
+                  {des}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
+      <Appoinment />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 const Appoinment = () => {
   return (
-    <div>
+    <div className="p-10 bg-gray-100 lg:py-20">
       <div className="text-center">
         <h3>অনলাইনে অ্যাপোয়েন্টমেন্ট পেতে সঠিক তথ্য সাবমিট করুন</h3>
         <h1 className="text-4xl font-semibold text-gray-700">
@@ -57,9 +57,9 @@ const Appoinment = () => {
 
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 "
+          className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600"
         >
-          Submit
+          Send a Message
         </button>
       </form>
     </div>
