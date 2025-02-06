@@ -11,7 +11,7 @@ const Button = ({ children, nav,foot }: ButtonProps) => {
       <button
         className={`${
           nav ? "bg-primary px-4 py-3 font-semibold text-xl text-white rounded-r-lg" : "bg-primary px-4 py-3 font-semibold text-xl rounded-lg text-white"
-        } ${foot ? 'bg-white px-4 py-3 font-semibold text-xl text-gray-950 rounded-r-lg': ''}`}
+        } ${foot ? 'bg-white px-4 py-3 font-semibold text-xl text-gray-500 rounded-r-lg': ''}`}
       >
         {children}
       </button>

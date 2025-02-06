@@ -28,7 +28,7 @@ const Doctors = () => {
             <div key={index} className="flex flex-col items-center">
               <Image
                 className="rounded-lg"
-                src={"/asperia/2088.jpg"}
+                src={doctor.image}
                 width={200}
                 height={200}
                 alt="doctor image"

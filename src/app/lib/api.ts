@@ -6,6 +6,7 @@ export const GetDoctor = () => {
         name: string;
         title: string;
         image: string;
+        desc: string[],
       }
   const [data, setData] = useState<Doctor[]>([]);
   useEffect(() => {
