@@ -12,7 +12,6 @@ const DetailPage = () => {
   const doctorInfo = doctors?.find(
     (doctor) => doctor.id.toString() === productId
   );
-  console.log(doctorInfo);
 
   if (!doctorInfo) {
     return <p>Loading data .....</p>;

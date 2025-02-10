@@ -17,7 +17,7 @@ const Header = () => {
     { link: "/packages", name: "Packages" },
     { link: "/specialties", name: "Specialties" },
     { link: "/cancerCare", name: "Cancer Care" },
-    { link: "/doctors", name: "Doctors" },
+    { link: "/doctorall", name: "Doctors" },
   ];
   const pathName = usePathname();
   const defaultClass =

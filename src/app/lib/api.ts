@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 
 export const GetDoctor = () => {
@@ -17,3 +18,22 @@ export const GetDoctor = () => {
 
   return data;
 };
+  export interface DoctorAll {
+    id:string;
+    name:string;
+    title: string;
+    image?:string;
+  }
+
+export const GetDoctorAll = () => {
+
+
+  const [doctor,setDoctor] = useState<DoctorAll[]>([])
+
+  useEffect(() => {
+    fetch("/doctorall.json")
+      .then((res) => res.json())
+      .then((data) => setDoctor(data));
+  }, []);
+  return doctor;
+}

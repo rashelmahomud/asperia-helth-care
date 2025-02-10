@@ -26,13 +26,16 @@ const Doctors = () => {
         <div className="grid lg:grid-cols-4 my-5 lg:gap-32">
           {doctors.map((doctor, index) => (
             <div key={index} className="flex flex-col items-center">
-              <Image
-                className="rounded-lg"
-                src={doctor.image}
-                width={200}
-                height={200}
-                alt="doctor image"
-              />
+              <div className="relative">
+                <Image
+                  className="rounded-lg z-10"
+                  src={doctor.image}
+                  width={200}
+                  height={200}
+                  alt="doctor image"
+                />
+                <div className="absolute inset-0 border-4 border-dotted -rotate-12 hover:border-iconBg rounded-lg"></div>
+              </div>
               <div className="mt-6 lg:p-4 text-left">
                 <Link href={`/doctors/${doctor.id}`}>
                   <h2 className="text-2xl font-semibold text-gray-700">
