@@ -25,9 +25,8 @@ export const GetDoctor = () => {
     image?:string;
   }
 
+  
 export const GetDoctorAll = () => {
-
-
   const [doctor,setDoctor] = useState<DoctorAll[]>([])
 
   useEffect(() => {
@@ -36,4 +35,22 @@ export const GetDoctorAll = () => {
       .then((data) => setDoctor(data));
   }, []);
   return doctor;
+}
+
+export interface DepertmentType {
+  id: string;
+  name: string;
+  image: string;
+  dec: string
+}
+
+export const GetDepertmentData = () => {
+  const [depertment, setDepertment] = useState<DepertmentType[]>([])
+
+  useEffect(() => {
+    fetch("/department.json")
+    .then((res) => res.json())
+    .then((data) => setDepertment(data));
+  },[])
+  return depertment;
 }

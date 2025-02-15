@@ -5,8 +5,17 @@ import Link from "next/link";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../components/shared/Button";
+import { useState } from "react";
 
 const Doctorall = () => {
+  const [selectedDepartment, setSelectedDepartment] = useState("");
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log( "in", selectedDepartment);
+    // Implement search logic here
+  };
+
   const doctorall = GetDoctorAll();
   return (
     <div>
@@ -19,18 +28,20 @@ const Doctorall = () => {
       <div className="relative text-center lg:p-32">
         <div className="absolute inset-0 bg-[url('/asperia/team-one-shape-1.png')] bg-no-repeat bg-right-top opacity-10 animate-custom-bounce"></div>
         <div className="relative z-10">
-          <form className="flex gap-5 ml-20 p-5">
+          <form onSubmit={handleSearch} className="flex gap-5 ml-20 p-5">
             <div className=" col-span-full flex items-center gap-5">
               <label className="bg-gray-100 p-3 rounded-lg text-gray-500">
                 search by doctors name
               </label>
               <select
-                id="countries"
+                id="department"
+                value={selectedDepartment}
+                onChange={(e) => setSelectedDepartment(e.target.value)}
                 className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5  dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
               >
                 <option>Filter by department</option>
-                <option value="US">
-                  Dr Taif Mahmud (Orthopedic & Trauma Surgeon)
+                <option value="Hematology">
+                  Hematology
                 </option>
                 <option value="CA">
                   Mohammed Selim (Orthopedic & Trauma Surgeon)

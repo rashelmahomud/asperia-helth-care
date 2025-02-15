@@ -10,7 +10,7 @@ const Progress = () => {
       const interval = setInterval(() => {
         setProgress1((prev) => (prev < 90 ? prev + 10 : 90));
         setProgress2((prev) => (prev < 70 ? prev + 15 : 70));
-        setProgress3((prev) => (prev < 50 ? prev + 30 : 50))
+        setProgress3((prev) => (prev < 50 ? prev + 5 : 50))
       }, 500);
   
       return () => clearInterval(interval);
