@@ -1,7 +1,7 @@
 import ForDoctor from "./components/ui/forDoctor";
 import Oncology from "./components/ui/oncology";
 import OncologyTwo from "./components/ui/oncologyTwo";
-import Depertment from "./components/ui/superDepertment";
+import Depertment from "./depertment/page";
 import Doctors from "./doctors/page";
 
 export default function Home() {
