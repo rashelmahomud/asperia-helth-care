@@ -15,7 +15,7 @@ const DepertmentId = () => {
 
   return (
     <div>
-      <div className={`bg-no-repeat bg-cover lg:p-32`} style={{ backgroundImage: `url(${depertments?.image})`}}>
+      <div className={`bg-no-repeat bg-center bg-cover lg:p-32`} style={{ backgroundImage: `url(${depertments?.image})`}}>
         <div className="flex gap-5 font-semibold text-gray-700">
           <Link href={"/"}>HOME</Link>/<Link href={"/doctorall"}>SERVICES</Link>
         </div>
