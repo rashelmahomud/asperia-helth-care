@@ -1,9 +1,8 @@
 "use client";
-import Button from "@/app/components/shared/Button";
+import LiveChat from "@/app/components/shared/LiveChat";
 import Progress from "@/app/components/shared/Progress";
 import { GetDoctorAll } from "@/app/lib/api";
-import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -50,43 +49,20 @@ const DoctorallDetails = () => {
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center lg:px-32 my-10">
         <div>
-          <h1 className="lg:text-5xl font-bold text-gray-700 mb-3">Personal Experience</h1>
+          <h1 className="lg:text-5xl font-bold text-gray-700 mb-3">
+            Personal Experience
+          </h1>
           <p className="text-xl p-2 text-gray-700">
             If you are going to use a passage of Lorem Ipsum, you need to be
             sure there isnt anything embarrassing hidden.
           </p>
         </div>
         <div>
-        <Progress />
+          <Progress />
         </div>
       </div>
 
-      <div className="bg-[#16243d] border-4 border-iconBg lg:mx-32 p-5 m-10 rounded-lg text-white shadow-[0_10px_40px_rgba(0,0,0,0.6)] drop-shadow-2xl relative">
-        <div className="absolute inset-0 opacity-10  bg-[url('/asperia/cta-one-img.png')] bg-cover bg-center"></div>
-
-        <div className="flex justify-between gap-10 items-center p-10 justify-between ">
-          <h1 className="lg:text-4xl font-semibold ">
-            Make appointment instantly{" "}
-          </h1>
-          <div className="order-last">
-            <Button>LIVE CHAT</Button>
-          </div>
-          <div className="flex items-center gap-3 text-xl ml-28">
-            <Link href={"/"}>
-              <FontAwesomeIcon
-                icon={faPhoneVolume}
-                className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"
-              />
-            </Link>
-
-            <div className="">
-              <p className="font-semibold">+8801835199061</p>
-
-              <span className="text-sm">hotline number</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <LiveChat />
     </div>
   );
 };

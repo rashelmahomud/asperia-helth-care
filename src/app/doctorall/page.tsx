@@ -2,17 +2,15 @@
 import Image from "next/image";
 import { GetDoctorAll } from "../lib/api";
 import Link from "next/link";
-import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from "../components/shared/Button";
 import { useState } from "react";
+import LiveChat from "../components/shared/LiveChat";
 
 const Doctorall = () => {
   const [selectedDepartment, setSelectedDepartment] = useState("");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log( "in", selectedDepartment);
+    console.log("in", selectedDepartment);
     // Implement search logic here
   };
 
@@ -40,9 +38,7 @@ const Doctorall = () => {
                 className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5  dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
               >
                 <option>Filter by department</option>
-                <option value="Hematology">
-                  Hematology
-                </option>
+                <option value="Hematology">Hematology</option>
                 <option value="CA">
                   Mohammed Selim (Orthopedic & Trauma Surgeon)
                 </option>
@@ -106,32 +102,7 @@ const Doctorall = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#16243d] border-4 border-iconBg lg:mx-32 p-5 m-10 rounded-lg text-white shadow-[0_10px_40px_rgba(0,0,0,0.6)] drop-shadow-2xl relative">
-        <div className="absolute inset-0 opacity-10  bg-[url('/asperia/cta-one-img.png')] bg-cover bg-center">
-        </div>
-        <div className="flex justify-between gap-10 items-center p-10 justify-between ">
-          <h1 className="text-4xl font-semibold ">
-            Make appointment instantly{" "}
-          </h1>
-          <div className="order-last">
-            <Button>LIVE CHAT</Button>
-          </div>
-          <div className="flex items-center gap-3 text-xl ml-28">
-            <Link href={"/"}>
-              <FontAwesomeIcon
-                icon={faPhoneVolume}
-                className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"
-              />
-            </Link>
-
-            <div className="">
-              <p className="font-semibold">+8801835199061</p>
-
-              <span className="text-sm">hotline number</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <LiveChat />
     </div>
   );
 };
