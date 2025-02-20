@@ -42,6 +42,16 @@ const DepertmentId = () => {
           architecto quis sed recusandae cumque repudiandae, quaerat aspernatur?
         </p>
       </div>
+      <div>
+        <div className="my-10">
+          <h2 className="text-2xl text-center text-gray-600 font-semibold"> Related Doctors</h2>
+          <h1 className="lg:text-5xl text-center text-gray-600 font-semibold">Meet our specialist doctors</h1>
+        </div>
+        <div className="my-5">
+          <h1 className="lg:text-5xl text-center font-semibold text-gray-600">Related Tests</h1>
+        </div>
+      </div>
+
       <LiveChat />
     </div>
   );
