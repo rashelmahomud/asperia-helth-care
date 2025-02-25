@@ -1,0 +1,9 @@
+[
+    {"id": 1, "name": "General Lab", "image":"", "des": "Complete range of high quality clinical laboratory services for reliable diagnosis"},
+
+    {"id": 2, "name": "Histopathology", "image":"", "des": "Modern histopathology services for cricital deases including cancer"},
+
+    {"id": 3, "name": "Molecular Lab", "image":"", "des": "High accuracy tests examining genetic mutations associated with infectious diseases"},
+
+    {"id": 4, "name": "Oncology", "image":"", "des": "First specialized oncology solution in Chattogram for better cancer management"}
+]

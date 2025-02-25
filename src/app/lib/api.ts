@@ -54,3 +54,22 @@ export const GetDepertmentData = () => {
   },[])
   return depertment;
 }
+
+//======================
+export interface ServicesType {
+  id: string;
+  name: string;
+  image: string;
+  des: string
+}
+export const GetServices = () => {
+  const [services, setServices] = useState<ServicesType[]>([])
+
+  useEffect(() => {
+    fetch("/services.json")
+    .then((res) => res.json())
+    .then((data) => setServices(data));
+  },[])
+  return services
+  
+}
