@@ -28,8 +28,7 @@ const Services = () => {
           <div
             key={service.id}
             className="border p-5 rounded-md"
-          >
-            
+          >            
             <span className="border-b-4 w-10 mx-auto border-red-500"></span>
             <h1 className="text-xl font-semibold">{service.name}</h1>
             <p className="text-gray-500 mt-2">{service.des}</p>
