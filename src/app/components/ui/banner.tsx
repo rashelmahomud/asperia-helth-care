@@ -14,14 +14,14 @@ const Banner = () => {
   const prevSlide = () =>
     setIndex((prev) => (prev - 1 + images.length) % images.length);
 
-  //auto run for this code
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 3000);
-    return clearInterval(interval);
+    return () => clearInterval(interval);
   }, []);
 
+  
 
   return (
     <div className="bg-gray-300">
@@ -72,3 +72,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
