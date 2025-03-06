@@ -33,7 +33,7 @@ const Banner = () => {
   ];
 
   return (
-    <div className="bg-gray-300">
+    <div className="bg-gray-300 mb-32">
       <div className="flex flex-row">
         <div className="basis-1/8 ">
           <div className="bg-[url('/asperia/main-slider-shape-1.png')] h-full bg-no-repeat animate-custom-bounce duration-300 ">
@@ -76,7 +76,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center gap-10 lg:px-32">
+      <div className="flex justify-center gap-10 lg:px-32 absolute -mt-16">
         {items.map((item, index) => (
           <div
             key={index}
