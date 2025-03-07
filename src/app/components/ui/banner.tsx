@@ -78,20 +78,20 @@ const Banner = () => {
       </div>
       <div className="flex justify-center gap-10 lg:px-32 absolute -mt-16">
         {items.map((item, index) => (
-          <div
-            key={index}
-            className="flex gap-3 items-center bg-white rounded-md p-8 w-96 shadow-md"
-          >
-            <Image
-              src={item.src}
-              width={60}
-              height={60}
-              alt="icon"
-              className="bg-gray-200 rounded-full m-2 p-3"
-            />
-            <h2 className="text-2xl font-bold text-center text-start ">
-              {item.text}
-            </h2>
+          <div key={index} className="relative overflow-hidden group">
+            <div className="flex gap-3 items-center bg-white rounded-md p-8 w-96 shadow-md">
+              <Image
+                src={item.src}
+                width={60}
+                height={60}
+                alt="icon"
+                className="bg-gray-200 rounded-full m-2 p-3"
+              />
+              <h2 className="text-2xl font-bold text-center text-start">
+                {item.text}
+              </h2>
+            </div>
+            <div className="group-hover:bg-primary group-hover:translate-y-full duration-700 hover:text-white w-full h-full absolute top-0 rounded-md"></div>
           </div>
         ))}
       </div>
