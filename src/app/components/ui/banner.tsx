@@ -54,13 +54,13 @@ const Banner = () => {
         <div className="basis-1/7">
           <div className="z-10 ml-10 absolute flex gap-5 justify-center items-center lg:mt-32 mt-10">
             <div className="">
-              <h2 className="text-5xl font-semibold leading-[60px]">
+              <h2 className="lg:text-5xl text-2xl font-semibold leading-[60px]">
                 For The Frist Time <br /> In Chaittagon
               </h2>
-              <h1 className="text-4xl font-semibold mb-3 my-3">
+              <h1 className="lg:text-4xl text-2xl font-semibold mb-3 my-3">
                 <span className="font-bold text-primary">
                   Supper Specialities
-                </span>{" "}
+                </span>
                 Laboraties
               </h1>
               <Button>Let&apos;s Get Started</Button>
@@ -76,7 +76,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center gap-10 lg:px-32 absolute -mt-16">
+      <div className="lg:flex justify-center gap-10 lg:px-32 p-3 absolute -mt-16">
         {items.map((item, index) => (
           <div key={index} className="relative overflow-hidden group">
             <div className="flex gap-3 items-center bg-white rounded-md p-8 w-96 shadow-md">

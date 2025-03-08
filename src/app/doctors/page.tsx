@@ -17,7 +17,7 @@ const Doctors = () => {
   }
 
   return (
-    <div className="relative text-center my-10 lg:p-32">
+    <div className="relative text-center lg:my-10 my-3 lg:p-32 p-3">
       <div className="absolute inset-0 bg-[url('/asperia/team-one-shape-1.png')] bg-no-repeat bg-right-top opacity-30 animate-custom-bounce duration-700"></div>
       <div className="relative z-10">
         <h1 className="lg:text-4xl my-10 font-semibold text-gray-700">
