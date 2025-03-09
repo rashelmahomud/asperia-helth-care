@@ -16,7 +16,7 @@ const Header = () => {
     { link: "/", name: "Home" },
     { link: "/packages", name: "Packages" },
     { link: "/specialties", name: "Specialties" },
-    { link: "/cancerCare", name: "Cancer Care" },
+    { link: "/oncology", name: "Cancer Care" },
     { link: "/doctorall", name: "Doctors" },
   ];
   const pathName = usePathname();
@@ -52,7 +52,7 @@ const activeClass = "bg-blue-500 text-white";
             ))}
 
             <li>
-              <Button nav>Appoinment</Button>
+             <Link href={'/apoinment'}> <Button nav>Appoinment</Button></Link>
             </li>
           </ul>
         </div>
