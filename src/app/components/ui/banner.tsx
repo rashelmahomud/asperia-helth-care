@@ -54,14 +54,15 @@ const Banner = () => {
         <div className="basis-1/7">
           <div className="z-10 ml-10 absolute flex gap-5 justify-center items-center lg:mt-32 mt-10">
             <div className="">
-              <h2 className="lg:text-5xl text-2xl font-semibold leading-[60px]">
+              <div className="bg-primary my-5 w-72 h-6 rounded-full "></div>
+              <h2 className="lg:text-5xl text-2xl font-semibold leading-[60px] text-gray-800">
                 For The Frist Time <br /> In Chaittagon
               </h2>
-              <h1 className="lg:text-4xl text-2xl font-semibold mb-3 my-3">
-                <span className="font-bold text-primary">
-                  Supper Specialities
+              <h1 className="lg:text-5xl text-2xl font-semibold mb-3 my-3 text-gray-800">
+                <span className="font-bold text-primary"> 
+                  Supper Specialities 
                 </span>
-                Laboraties
+                 Laboraties
               </h1>
               <Button>Let&apos;s Get Started</Button>
             </div>

@@ -54,15 +54,14 @@ const Footer = () => {
           <div className="col-span-2">
             <h1 className="text-white font-semibold text-xl mb-10">Content</h1>
             <div className="text-lightText font-semibold">
-              <p className="flex gap-2">
-                {" "}
+              <p className="flex items-center gap-2">
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   className="w-4 text-primary"
                 />
                 rashelmahmudraj1998@gmail.com
               </p>
-              <p className="flex gap-2 my-3">
+              <p className="flex items-center gap-2 my-3">
                 <FontAwesomeIcon
                   icon={faLocationDot}
                   className="text-primary w-4 mb-5"
@@ -70,7 +69,7 @@ const Footer = () => {
                 1486/1672, Al-Nur Badrun Center (4th floor), O.R Nizam Road
                 Probartak Circle, Chattogram
               </p>
-              <p className="flex gap-2">
+              <p className="flex items-center gap-2">
                 <FontAwesomeIcon
                   icon={faPhoneVolume}
                   className="w-4 text-primary"
