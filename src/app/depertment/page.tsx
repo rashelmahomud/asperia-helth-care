@@ -21,7 +21,7 @@ const Depertment = () => {
         {depertments.map((depertment) => (
           <div
             key={depertment.id}
-            className="flex flex-col mx-auto border rounded-lg hover:border-b-4 hover:border-b-iconBg lg:p-16 hover:-translate-y-3 duration-300"
+            className="flex flex-col mx-auto border rounded-lg hover:border-b-4 hover:border-b-iconBg lg:p-16 p-5 hover:-translate-y-3 duration-300"
           >
             <div className="relative group">
               <Image

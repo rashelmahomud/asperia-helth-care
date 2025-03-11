@@ -26,8 +26,8 @@ const Doctorall = () => {
       <div className="relative text-center lg:p-32">
         <div className="absolute inset-0 bg-[url('/asperia/team-one-shape-1.png')] bg-no-repeat bg-right-top opacity-10 animate-custom-bounce"></div>
         <div className="relative z-10">
-          <form onSubmit={handleSearch} className="flex gap-5 ml-20 p-5">
-            <div className=" col-span-full flex items-center gap-5">
+          <form onSubmit={handleSearch} className="lg:flex gap-5 lg:ml-20 p-5">
+            <div className="lg:col-span-full lg:flex lg:items-center l:gap-5">
               <label className="bg-gray-100 p-3 rounded-lg text-gray-500">
                 search by doctors name
               </label>
@@ -59,7 +59,7 @@ const Doctorall = () => {
             </button>
           </form>
 
-          <div className="grid lg:grid-cols-4 my-5 lg:gap-20">
+          <div className="grid lg:grid-cols-4 my-5 lg:gap-20 p-3">
             {doctorall?.map((doctor, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="relative group">

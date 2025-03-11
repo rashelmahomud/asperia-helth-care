@@ -59,10 +59,10 @@ const Banner = () => {
                 For The Frist Time <br /> In Chaittagon
               </h2>
               <h1 className="lg:text-5xl text-2xl font-semibold mb-3 my-3 text-gray-800">
-                <span className="font-bold text-primary"> 
-                  Supper Specialities 
+                <span className="font-bold text-primary">
+                  Supper Specialities
                 </span>
-                 Laboraties
+                Laboraties
               </h1>
               <Button>Let&apos;s Get Started</Button>
             </div>
@@ -92,7 +92,7 @@ const Banner = () => {
                 {item.text}
               </h2>
             </div>
-            <div className="group-hover:bg-primary group-hover:translate-y-full duration-700 hover:text-white w-full h-full absolute top-0 rounded-md"></div>
+            <div className="group-hover:bg-primary group-hover:-translate-x-full duration-700 hover:text-white w-full h-full absolute top-0 rounded-md"></div>
           </div>
         ))}
       </div>

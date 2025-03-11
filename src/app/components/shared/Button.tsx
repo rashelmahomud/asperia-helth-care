@@ -9,7 +9,7 @@ const Button = ({ children, nav,foot }: ButtonProps) => {
   return (
     <div>
       <button
-        className={`${ nav ? "bg-primary rounded-r-lg px-4 py-3 font-semibold text-xl text-white " : foot ? 'bg-white rounded-lg px-4 py-3 font-semibold text-xl text-gray-950 rounded-lg': 'bg-primary text-white rounded-lg px-4 py-3 font-semibold text-xl '}} `}
+        className={`${ nav ? "bg-primary text-white rounded-r-lg px-4 py-3 font-semibold text-xl " : foot ? 'bg-white rounded-lg px-4 py-3 font-semibold text-xl text-gray-950 rounded-lg': 'bg-primary text-white rounded-lg px-4 py-3 font-semibold text-xl '}} `}
       >
         {children}
       </button>
