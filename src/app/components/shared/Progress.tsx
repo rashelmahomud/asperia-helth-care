@@ -17,7 +17,7 @@ const Progress = () => {
     }, []);
   
     return (
-      <div>
+      <div className="p-3">
         <ProgressBar progress={progress1} />
         <ProgressBar progress={progress2} />
         <ProgressBar progress={progress3} />

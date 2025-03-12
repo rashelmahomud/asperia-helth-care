@@ -21,11 +21,11 @@ const Doctorall = () => {
 
   return (
     <div>
-      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover lg:p-32">
+      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover lg:h-96 h-32 lg:p-32">
         <div className="flex gap-5 font-semibold text-gray-700">
           <Link href={"/"}>HOME</Link>/<Link href={"/doctorall"}>DOCTOR</Link>
         </div>
-        <h2 className="text-5xl font-semibold text-gray-800">Doctors</h2>
+        <h2 className="lg:text-5xl text-3xl font-semibold text-gray-800">Doctors</h2>
       </div>
       <div className="relative text-center lg:p-32">
         <div className="absolute inset-0 bg-[url('/asperia/team-one-shape-1.png')] bg-no-repeat bg-right-top opacity-10 animate-custom-bounce"></div>
@@ -61,7 +61,7 @@ const Doctorall = () => {
             </button>
           </form>
 
-          <div className="grid lg:grid-cols-4 my-5 lg:gap-20 p-3">
+          <div className="grid lg:grid-cols-4 my-5 lg:gap-20 gap-10 p-3">
             {searchDoctor.length
               ? searchDoctor?.map((doctor, index) => (
                   <div key={index} className="flex flex-col items-center">

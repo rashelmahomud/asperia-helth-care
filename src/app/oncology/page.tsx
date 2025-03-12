@@ -6,17 +6,17 @@ import Service from "../service/page";
 const OncologyPage = () => {
   return (
     <div>
-      <div className="bg-[url('/asperia/onco.jpg')]  bg-no-repeat bg-cover lg:h-96 lg:p-32">
+      <div className="bg-[url('/asperia/onco.jpg')]  bg-no-repeat bg-cover lg:h-96 h-36  lg:p-32">
         <div className="flex gap-5 font-semibold text-gray-700">
           <Link href={"/"}>HOME</Link>/
           <Link href={"/specialties"} className="uppercase">
             SERVICES
           </Link>
         </div>
-        <h2 className="text-5xl font-semibold text-gray-800">Oncology</h2>
+        <h2 className="lg:text-5xl text-3xl font-semibold text-gray-800">Oncology</h2>
       </div>
       <div>
-        <p className="lg:p-32 text-gray-600">
+        <p className="lg:p-32 text-gray-600 p-3">
           Asperia healthcare ltd has added a new dimension in healthcare sector
           of Bangladesh by introducing most advance cancer screening and
           management. Our oncology center provides comprehensive and super

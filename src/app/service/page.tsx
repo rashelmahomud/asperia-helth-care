@@ -20,7 +20,7 @@ const Service = () => {
 
   return (
     <div className="lg:px-32 p-5 bg-gray-200">
-      <h1 className="text-5xl font-semibold text-gray-700">
+      <h1 className="lg:text-5xl text-3xl font-semibold text-gray-700">
         Available Services
       </h1>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 my-5">
