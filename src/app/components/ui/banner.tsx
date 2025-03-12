@@ -52,9 +52,9 @@ const Banner = () => {
           </div>
         </div>
         <div className="basis-1/7">
-          <div className="z-10 ml-10 absolute flex gap-5 justify-center items-center lg:mt-32 mt-10">
+          <div className="z-1 ml-10 absolute flex gap-5 justify-center items-center lg:mt-32 mt-10">
             <div className="">
-              <div className="bg-primary my-5 w-72 h-6 rounded-full "></div>
+              <div className="bg-primary my-5 lg:w-72 h-3 rounded-full z-[-1 ]"></div>
               <h2 className="lg:text-5xl text-2xl font-semibold leading-[60px] text-gray-800">
                 For The Frist Time <br /> In Chaittagon
               </h2>

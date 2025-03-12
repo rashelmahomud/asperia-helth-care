@@ -1,13 +1,18 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faPhoneVolume,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
   type NavLInk = {
     link: string;
     name: string;
@@ -20,22 +25,31 @@ const Header = () => {
     { link: "/doctorall", name: "Doctors" },
   ];
   const pathName = usePathname();
-  const defaultClass =
-  "py-2 px-4 rounded-lg text-gray-700 transition";
-const activeClass = "bg-blue-500 text-white";
+  const defaultClass = "py-2 px-4 rounded-lg text-gray-700 transition";
+  const activeClass = "bg-blue-500 text-white";
   return (
     <div className="">
-      <div className="lg:flex gap-5 justify-between lg:px-32 p-5">
-  
-          <Image
-            src={"/asperia/logo.png"}
-            width={150}
-            height={150}
-            alt="logo"
-          />
-       
-        <div className="flex items-center gap-3 text-xl order-last">
-          <Link href={'/'}><FontAwesomeIcon icon={faPhoneVolume} className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"/></Link>
+      <div className="flex gap-5 justify-between lg:px-32 p-5">
+        <Image src={"/asperia/logo.png"} width={150} height={150} alt="logo" />
+
+        <div onClick={() => setOpen(!open)} className="lg:hidden ml-20">
+          {open ? (
+            <FontAwesomeIcon icon={faXmark} className="w-8 h-8 text-red-500 border rounded-full p-3 border-4" />
+          ) : (
+            <FontAwesomeIcon
+              icon={faBars}
+              className="w-8 h-8 text-iconBg border rounded-full p-3 border-4"
+            />
+          )}
+        </div>
+
+        <div className="lg:flex hidden items-center gap-3 text-xl order-last">
+          <Link href={"/"}>
+            <FontAwesomeIcon
+              icon={faPhoneVolume}
+              className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"
+            />
+          </Link>
 
           <div className="">
             <p className="font-semibold">+8801835199061</p>
@@ -44,15 +58,24 @@ const activeClass = "bg-blue-500 text-white";
           </div>
         </div>
         <div>
-          <ul className="lg:flex hidden justify-center items-center gap-5 bg-gray-100 rounded-lg pl-5 font-semibold">
+           <ul className={`lg:flex text-center md:pb-3 p-5 lg:p-0 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-24 opacity-100 z-[10]" : "left-[-490px] lg:opacity-100 opacity-0"}`}>
             {links.map((link) => (
-              <li key={link.name} >
-                <Link href={link.link} className={`${defaultClass} ${pathName === link.link ? activeClass : ''}`}>{link.name}</Link>
+              <li key={link.name} className="flex justify-center">
+                <Link
+                  href={link.link}
+                  className={`${defaultClass} ${
+                    pathName === link.link ? activeClass : ""
+                  }`}
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
 
             <li>
-             <Link href={'/apoinment'}> <Button nav>Appoinment</Button></Link>
+              <Link href={"/apoinment"}>
+                <Button nav>Appoinment</Button>
+              </Link>
             </li>
           </ul>
         </div>
