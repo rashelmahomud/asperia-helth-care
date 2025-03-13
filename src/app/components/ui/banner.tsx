@@ -33,10 +33,10 @@ const Banner = () => {
   ];
 
   return (
-    <div className="bg-gray-300 mb-32">
-      <div className="flex flex-row">
+    <div className="bg-gray-300 mb-32 pt-[100px]">
+      <div className="flex flex-row overflow-hidden">
         <div className="basis-1/8 ">
-          <div className="bg-[url('/asperia/main-slider-shape-1.png')] h-full bg-no-repeat animate-custom-bounce duration-300 ">
+          <div className="bg-[url('/asperia/main-slider-shape-1.png')] h-full bg-no-repeat animate-custom-bounce duration-300">
             <div className="lg:p-16 bg-gray-300 h-full opacity-50 z-[-1]">
               <FontAwesomeIcon
                 onClick={nextSlide}
