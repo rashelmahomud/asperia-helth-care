@@ -71,7 +71,7 @@ const Header = () => {
           <Link href={"/"}>
             <FontAwesomeIcon
               icon={faPhoneVolume}
-              className="w-8 h-8 text-iconBg border rounded-full p-2 hover:text-iconBg hover:bg-primary border-4"
+              className="w-8 h-8 text-iconBg border rounded-full p-2 hover:text-iconBg hover:bg-primary border-4 border-gray-400"
             />
           </Link>
 

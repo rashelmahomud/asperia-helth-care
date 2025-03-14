@@ -17,10 +17,10 @@ const LiveChat = () => {
             <Button>LIVE CHAT</Button>
           </div>
           <div className="flex items-center  gap-3 text-xl lg:ml-28">
-            <Link href={"/"}>
+            <Link href={"/"} className='group'>
               <FontAwesomeIcon
                 icon={faPhoneVolume}
-                className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"
+                className="w-8 h-8 text-iconBg rounded-full p-3 border-4"
               />
             </Link>
 

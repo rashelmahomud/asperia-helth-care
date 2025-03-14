@@ -92,7 +92,7 @@ const Banner = () => {
                 {item.text}
               </h2>
             </div>
-            <div className="group-hover:bg-primary group-hover:-translate-x-full duration-700 hover:text-white w-full h-full absolute top-0 rounded-md"></div>
+            <div className="group-hover:bg-primary group-hover:-translate-x-full duration-[1.5s] hover:text-white w-full h-full absolute top-0 rounded-md"></div>
           </div>
         ))}
       </div>

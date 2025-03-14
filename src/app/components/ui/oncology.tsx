@@ -25,7 +25,7 @@ const Oncology = () => {
         />
       </div>
 
-      <div className="bg[url('/public/asperia/')] max-w-2xl">
+      <div className="relative max-w-2xl">
         <h3 className="lg:text-2xl text-xl font-semibold text-gray-800">
           Specialized Oncology Services
         </h3>
@@ -77,6 +77,7 @@ const Oncology = () => {
           </div>
         </div>
         </div>
+        <div className="bg-[url('/asperia/cta-one-img.png')] bg-no-repeat bg-cover left-0 top-0 w-full h-full absolute opacity-10"></div>
       </div>
     </div>
   );
