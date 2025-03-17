@@ -22,7 +22,10 @@ const DetailPage = () => {
 
   return (
     <div className="">
-      <div className="lg:flex gap-10 py-24">
+
+      <div className="absolute inset-0 bg-[url('/asperia/get-insuracne-two-shape-3.png')] bg-no-repeat opacity-10 animate-custom-bounce bg-right-top "></div>
+
+      <div className="lg:flex lg:gap-40 gap-10 py-24">
         <div className="bg-[url('/asperia/get-insuracne-two-shape-1.png')] bg-no-repeat">
           <Image
             className="rounded-full lg:ml-16 p-10"
@@ -33,10 +36,8 @@ const DetailPage = () => {
           />
         </div>
 
-        <div className="lg:p-20 relative">
-          <div className="absolute inset-0 bg-[url('/asperia/get-insuracne-two-shape-3.png')] bg-no-repeat opacity-10 animate-custom-bounce lg:ml-[320px]"></div>
-
-          <div className="relative p-5">
+        <div className="lg:p-20 p-3">
+          <div className="">
             <h1 className="lg:text-5xl text-2xl text-gray-700 font-semibold">
               {doctorInfo.name}
             </h1>
