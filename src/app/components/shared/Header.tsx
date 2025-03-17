@@ -51,7 +51,8 @@ const Header = () => {
     <div>
       <div className={`flex gap-5 justify-between lg:px-32 p-5 fixed bg-gray-300 w-full z-40 ${visible ? "translate-y-0 duration-700" : "-translate-y-full duration-700"}`}>
       {/* <div className="flex gap-5 justify-between lg:px-32 p-5 fixed bg-white w-full z-10"> */}
-        <Image src={"/asperia/logo.png"} width={150} height={150} alt="logo" />
+      <Link href={'/'}><Image src={"/asperia/logo.png"} width={150} height={150} alt="logo" /></Link>
+        
 
         <div onClick={() => setOpen(!open)} className="lg:hidden ml-20">
           {open ? (

@@ -4,8 +4,7 @@ import { GetServices } from "@/app/lib/api";
 const Services = () => {
   const services = GetServices();
   return (
-    <div className="lg:px-32 mx-auto my-10 relative">
-      <div className="absolute inset-0 bg-[url('/asperia/get-insuracne-two-shape-3.png')] bg-no-repeat opacity-5 animate-custom-bounce bg-right-top "></div>
+    <div className="lg:px-32 mx-auto my-10">
       <div className="grid lg:grid-cols-2 p-2 gap-10 justify-between">
         <div className="">
           <h3 className="uppercase text-xl font-semibold mb-4">
@@ -23,13 +22,9 @@ const Services = () => {
         </div>
       </div>
 
-            
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 p-5">
         {services.map((service) => (
-          <div
-            key={service.id}
-            className="border p-5 rounded-md"
-          >            
+          <div key={service.id} className="border p-5 rounded-md">
             <span className="border-b-4 w-10 mx-auto border-red-500"></span>
             <h1 className="text-xl font-semibold">{service.name}</h1>
             <p className="text-gray-500 mt-2">{service.des}</p>
