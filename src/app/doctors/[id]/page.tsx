@@ -21,22 +21,23 @@ const DetailPage = () => {
   }
 
   return (
-    <div>
-      <div className="flex gap-10 my-10">
-        <div className="bg-[url('/asperia/get-insuracne-two-shape-1.png')]">
+    <div className="">
+      <div className="lg:flex gap-10 py-24">
+        <div className="bg-[url('/asperia/get-insuracne-two-shape-1.png')] bg-no-repeat">
           <Image
-            className="rounded-full ml-16 p-10"
+            className="rounded-full lg:ml-16 p-10"
             src={"/asperia/about-two-img-1.jpg"}
-            width={600}
-            height={600}
+            width={500}
+            height={400}
             alt="doctor image"
           />
         </div>
 
-        <div className="relative">
-          <div className="absolute inset-0 bg-[url('/asperia/get-insuracne-two-shape-3.png')] bg-no-repeat bg-right-top opacity-10 animate-custom-bounce"></div>
-          <div className="relative p-10">
-            <h1 className="text-5xl text-gray-700 font-semibold">
+        <div className="lg:p-20 relative">
+          <div className="absolute inset-0 bg-[url('/asperia/get-insuracne-two-shape-3.png')] bg-no-repeat opacity-10 animate-custom-bounce lg:ml-[320px]"></div>
+
+          <div className="relative p-5">
+            <h1 className="lg:text-5xl text-2xl text-gray-700 font-semibold">
               {doctorInfo.name}
             </h1>
             <h3 className="text-xl font-semibold my-2">
@@ -44,7 +45,7 @@ const DetailPage = () => {
             </h3>
             <h2>{doctorInfo.title}</h2>
             <h4 className="text-xl">যেসব রোগের চিকিৎসা করা হয়</h4>
-            <ul className="grid grid-flow-col lg:grid-rows-10 gap-2 my-2">
+            <ul className="grid lg:grid-cols-2 grid-cols-1 gap-2 my-2">
               {doctorInfo?.desc?.map((des, index) => (
                 <li key={index} className="my-2 text-gray-700">
                   <FontAwesomeIcon

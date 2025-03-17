@@ -7,7 +7,7 @@ const Appoinment = () => {
           অনলাইন অ্যাপোয়েন্টমেন্ট
         </h1>
       </div>
-      <form className="grid grid-cols-2 gap-5 w-1/2 mx-auto p-10">
+      <form className="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:w-1/2 mx-auto lg:p-10 p-3">
         <input
           type="text"
           name="name"
