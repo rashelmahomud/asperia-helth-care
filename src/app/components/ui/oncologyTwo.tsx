@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const OncologyTwo = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-20 lg:p-32 p-3 bg-gray-100 justify-center">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-20 lg:p-32 p-3 bg-gray-100 dark:bg-dark justify-center">
       <div className="relative">
         <Image
           className="rounded-lg lg:ml-10 mt-12"
@@ -31,32 +31,32 @@ const OncologyTwo = () => {
         </h3>
         <h1
           className="lg:text-5xl text-2xl tracking-wide
- font-semibold text-gray-700 my-2"
+ font-semibold text-gray-700 dark:text-white my-2"
         >
           World class cancer diagnosis & management in Chattogram
         </h1>
-        <p className="text-xl text-gray-600 my-3">
+        <p className="text-xl text-gray-600 dark:text-white my-3">
           Asperia healthcare ltd has introduced most advance cancer screening
           and management in Chattogram. Our oncology center provides
           comprehensive and super specialized, modern diagnostic services,
           treatment, and care for cancer.
         </p>
         <ul>
-          <li className="flex items-center gap-2 font-semibold text-gray-700">
+          <li className="flex items-center gap-2 font-semibold text-gray-700 dark:text-white">
             <FontAwesomeIcon
               icon={faCircleCheck}
               className="w-4 h-4 text-white bg-iconBg rounded-full"
             />
             High accuracy investigation in molecular & histopathology lab
           </li>
-          <li className="flex items-center gap-2 font-semibold text-gray-700">
+          <li className="flex items-center gap-2 font-semibold text-gray-700 dark:text-white">
             <FontAwesomeIcon
               icon={faCircleCheck}
               className="w-4 h-4 text-white bg-iconBg rounded-full"
             />
             Devoted team of specialist doctors and nurses.
           </li>
-          <li className="flex items-center gap-2 font-semibold text-gray-700">
+          <li className="flex items-center gap-2 font-semibold text-gray-700 dark:text-white">
             <FontAwesomeIcon
               icon={faCircleCheck}
               className="w-4 h-4 text-white bg-iconBg rounded-full"
@@ -74,7 +74,7 @@ const OncologyTwo = () => {
               />
             </Link>
 
-            <div className="">
+            <div className="dark:text-white">
               <p className="font-semibold">+8801835199061</p>
 
               <span className="text-sm">hotline number</span>

@@ -7,8 +7,9 @@ import Depertment from "./depertment/page";
 import Doctors from "./doctors/page";
 
 export default function Home() {
+
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 dark:bg-dark">
       <Banner />
       <Services />
       <Oncology />

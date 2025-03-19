@@ -38,7 +38,7 @@ const DetailPage = () => {
 
         <div className="lg:p-20 p-3">
           <div className="">
-            <h1 className="lg:text-5xl text-2xl text-gray-700 font-semibold">
+            <h1 className="lg:text-5xl text-2xl text-gray-700 dark:text-white font-semibold">
               {doctorInfo.name}
             </h1>
             <h3 className="text-xl font-semibold my-2">
@@ -48,7 +48,7 @@ const DetailPage = () => {
             <h4 className="text-xl">যেসব রোগের চিকিৎসা করা হয়</h4>
             <ul className="grid lg:grid-cols-2 grid-cols-1 gap-2 my-2">
               {doctorInfo?.desc?.map((des, index) => (
-                <li key={index} className="my-2 text-gray-700">
+                <li key={index} className="my-2 text-gray-700 dark:text-white">
                   <FontAwesomeIcon
                     icon={faCircleCheck}
                     className="mr-3 text-iconBg hover:text-primary"

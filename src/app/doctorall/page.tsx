@@ -22,7 +22,7 @@ const Doctorall = () => {
   return (
     <div>
       <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover lg:h-96 h-32 lg:p-32">
-        <div className="flex gap-5 font-semibold text-gray-700">
+        <div className="flex gap-5 font-semibold text-gray-700 ">
           <Link href={"/"}>HOME</Link>/<Link href={"/doctorall"}>DOCTOR</Link>
         </div>
         <h2 className="lg:text-5xl text-3xl font-semibold text-gray-800">Doctors</h2>
@@ -133,11 +133,11 @@ const Doctorall = () => {
                     </div>
                     <div className="mt-6 lg:p-4 text-left">
                       <Link href={`/doctorall/${doctor.id}`}>
-                        <h2 className="text-2xl font-semibold text-gray-700">
+                        <h2 className="text-2xl font-semibold text-gray-700 dark:text-white">
                           {doctor.name}
                         </h2>
                       </Link>
-                      <p className="text-primary">{doctor.title}</p>
+                      <p className="text-primary dark:text-white">{doctor.title}</p>
                     </div>
                   </div>
                 ))}

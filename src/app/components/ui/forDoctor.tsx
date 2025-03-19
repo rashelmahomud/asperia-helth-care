@@ -8,7 +8,7 @@ const ForDoctor = () => {
   return (
     <div className="lg:px-32">
       <div
-        className="bg-primary flex justify-between gap-20 p-10 rounded-t-lg relative overflow-hidden"
+        className="bg-primary dark:bg-medium flex justify-between gap-20 p-10 rounded-t-lg relative overflow-hidden"
       >
         <div className="flex items-center gap-5 ">
           <div className="">

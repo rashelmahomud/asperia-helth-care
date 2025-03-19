@@ -20,7 +20,7 @@ const Doctors = () => {
     <div className="relative text-center lg:my-10 my-3 lg:p-32 p-3">
       <div className="absolute inset-0 bg-[url('/asperia/team-one-shape-1.png')] bg-no-repeat bg-right-top opacity-30 animate-custom-bounce duration-700"></div>
       <div className="relative z-10">
-        <h1 className="lg:text-4xl text-2xl my-10 font-semibold text-gray-700">
+        <h1 className="lg:text-4xl text-2xl my-10 font-semibold text-gray-700 dark:text-white">
           Meet Our Specialist <br /> Doctors
         </h1>
         <div className="grid lg:grid-cols-4 my-5 lg:gap-32 gap-10">
@@ -56,11 +56,11 @@ transition-all duration-500 group-hover:rotate-0 group-hover:scale-105 group-hov
 
               <div className="mt-6 lg:p-4 text-left">
                 <Link href={`/doctors/${doctor.id}`}>
-                  <h2 className="text-2xl font-semibold text-gray-700">
+                  <h2 className="text-2xl font-semibold text-gray-700 dark:text-white">
                     {doctor.name}
                   </h2>
                 </Link>
-                <p className="text-primary">{doctor.title}</p>
+                <p className="text-primary dark:text-white">{doctor.title}</p>
               </div>
             </div>
           ))}

@@ -80,7 +80,7 @@ const Banner = () => {
       <div className="lg:flex justify-center gap-10 lg:px-32 p-3 absolute -mt-16">
         {items.map((item, index) => (
           <div key={index} className="relative overflow-hidden group">
-            <div className="flex gap-3 items-center bg-white rounded-md p-8 w-96 shadow-md">
+            <div className="flex gap-3 items-center dark:bg-dark dark:text-white bg-white rounded-md p-8 w-96 shadow-md">
               <Image
                 src={item.src}
                 width={60}

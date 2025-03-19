@@ -10,6 +10,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -26,6 +27,7 @@ const Header = () => {
     { link: "/specialties", name: "Specialties" },
     { link: "/oncology", name: "Cancer Care" },
     { link: "/doctorall", name: "Doctors" },
+    { link: "/setting", name: "Setting" },
   ];
 
   useEffect(() => {
@@ -45,13 +47,13 @@ const Header = () => {
   }, [scrollPosition]);
 
   const pathName = usePathname();
-  const defaultClass = "py-3 px-4 rounded-lg text-gray-700 transition";
+  const defaultClass = "py-3 px-4 rounded-lg dark:text-white text-gray-700 transition";
   const activeClass = "bg-blue-500 text-white";
   return (
     <div>
-      <div className={`flex gap-5 justify-between lg:px-32 p-5 fixed bg-gray-300 w-full z-40 ${visible ? "translate-y-0 duration-700" : "-translate-y-full duration-700"}`}>
+      <div className={`flex gap-5 justify-between lg:px-32 p-5 fixed bg-gray-300 w-full z-40 dark:bg-dark dark:text-white ${visible ? "translate-y-0 duration-700" : "-translate-y-full duration-700"}`}>
       {/* <div className="flex gap-5 justify-between lg:px-32 p-5 fixed bg-white w-full z-10"> */}
-      <Link href={'/'}><Image src={"/asperia/logo.png"} width={150} height={150} alt="logo" /></Link>
+      <Link href={'/'}><Image src={"/asperia/logo.png"} width={150} height={150} alt="logo" className="" /></Link>
         
 
         <div onClick={() => setOpen(!open)} className="lg:hidden ml-20">
@@ -67,7 +69,6 @@ const Header = () => {
             />
           )}
         </div>
-
         <div className="lg:flex hidden items-center gap-3 text-xl order-last">
           <Link href={"/"}>
             <FontAwesomeIcon
@@ -84,7 +85,7 @@ const Header = () => {
         </div>
         <div className="lg:ml-32">
           <ul
-            className={`lg:flex text-center md:pb-3 p-5 lg:p-0 absolute lg:static bg-white lg:bg-gray-300 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+            className={`lg:flex text-center md:pb-3 p-5 lg:p-0 absolute lg:static dark:bg-dark bg-white lg:bg-gray-300 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
               open
                 ? "top-24 opacity-100 z-[10]"
                 : "left-[-490px] lg:opacity-100 opacity-0"
@@ -103,6 +104,9 @@ const Header = () => {
               </li>
             ))}
 
+            <li className="mx-2">
+              <ThemeToggle />
+            </li>
             <li>
               <Link href={"/apoinment"}>
                 <Button nav>Appoinment</Button>

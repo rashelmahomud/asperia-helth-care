@@ -73,7 +73,7 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faPhoneVolume}
                   className="w-4 text-primary"
-                />{" "}
+                />
                 +88 02333336920, +880 1810-004550
               </p>
               <h3 className="text-white font-semibold text-xl my-5">

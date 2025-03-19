@@ -20,7 +20,7 @@ const DoctorallDetails = () => {
         <div className="flex gap-5 font-semibold text-gray-700">
           <Link href={"/"}>HOME</Link>/<Link href={"/doctorall"}>DOCTOR</Link>
         </div>
-        <h2 className="lg:text-5xl font-semibold text-gray-800">Profile</h2>
+        <h2 className="lg:text-5xl font-semibold text-gray-800 ">Profile</h2>
       </div>
       <div className="lg:flex gap-10">
         <div>
@@ -36,7 +36,7 @@ const DoctorallDetails = () => {
         <div className="">
           <div className=""></div>
           <div className="relative p-10 mx-auto">
-            <h1 className="lg:text-5xl text-2xl text-gray-700 font-semibold">
+            <h1 className="lg:text-5xl text-2xl text-gray-700 dark:text-white font-semibold">
               {data?.name}
             </h1>
             <h3 className="text-sm font-semibold my-2">
@@ -49,10 +49,10 @@ const DoctorallDetails = () => {
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center lg:px-32 my-10">
         <div>
-          <h1 className="lg:text-5xl font-bold text-gray-700 mb-3 text-center">
+          <h1 className="lg:text-5xl font-bold text-gray-700 dark:text-white mb-3 text-center">
             Personal Experience
           </h1>
-          <p className="text-xl p-3 text-gray-700">
+          <p className="text-xl p-3 text-gray-700 dark:text-white">
             If you are going to use a passage of Lorem Ipsum, you need to be
             sure there isnt anything embarrassing hidden.
           </p>

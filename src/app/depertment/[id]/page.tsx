@@ -20,20 +20,20 @@ const DepertmentId = () => {
         className={`bg-no-repeat bg-center bg-cover lg:p-32`}
         style={{ backgroundImage: `url(${depertments?.image})` }}
       >
-        <div className="flex gap-5 font-semibold text-gray-700">
+        <div className="flex gap-5 font-semibold text-gray-700 dark:text-white">
           <Link href={"/"}>HOME</Link>/<Link href={"/doctorall"}>SERVICES</Link>
         </div>
-        <h2 className="text-5xl font-semibold text-gray-800">
+        <h2 className="text-5xl font-semibold text-gray-800 dark:text-white">
           {depertments?.name}
         </h2>
       </div>
       <div className="lg:p-32">
-        <h1 className="font-semibold text-5xl mb-3 text-gray-700">About</h1>
-        <p className="text-gray-500">{depertments?.dec}</p>
-        <h2 className="text-5xl font-semibold my-5 text-gray-700">
+        <h1 className="font-semibold text-5xl mb-3 text-gray-700 dark:text-white">About</h1>
+        <p className="text-gray-500 dark:text-white">{depertments?.dec}</p>
+        <h2 className="text-5xl font-semibold my-5 text-gray-700 dark:text-white">
           Consultation & Appointment
         </h2>
-        <p className="text-gray-500">
+        <p className="text-gray-500 dark:text-white">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vitae
           consectetur deleniti reiciendis ex iure nesciunt illo, autem ullam
           ducimus a maiores cumque praesentium quae aut impedit earum labore,
@@ -44,11 +44,11 @@ const DepertmentId = () => {
       </div>
       <div>
         <div className="my-10">
-          <h2 className="text-2xl text-center text-gray-600 font-semibold"> Related Doctors</h2>
-          <h1 className="lg:text-5xl text-center text-gray-600 font-semibold">Meet our specialist doctors</h1>
+          <h2 className="text-2xl text-center text-gray-600 dark:text-white font-semibold"> Related Doctors</h2>
+          <h1 className="lg:text-5xl text-center text-gray-600 dark:text-white font-semibold">Meet our specialist doctors</h1>
         </div>
         <div className="my-5">
-          <h1 className="lg:text-5xl text-center font-semibold text-gray-600">Related Tests</h1>
+          <h1 className="lg:text-5xl text-center font-semibold text-gray-600 dark:text-white">Related Tests</h1>
         </div>
       </div>
 

@@ -1,11 +1,14 @@
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"], // Adjust based on your project structure
   theme: {
     extend: {
       colors: {
-          primary: '#0d6efd',
-          lightText: '#97a2b7',
-          iconBg: '#0ce0ff'
+        dark: "#232A3C",
+        medium: "#293245",
+        primary: "#0d6efd",
+        lightText: "#97a2b7",
+        iconBg: "#0ce0ff",
       },
       keyframes: {
         customBounce: {
@@ -20,9 +23,7 @@ module.exports = {
       animation: {
         "custom-bounce": "customBounce 1s infinite",
       },
-     
     },
-   
   },
   plugins: [],
 };

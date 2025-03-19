@@ -12,7 +12,7 @@ export interface DepertmentType {
 const Depertment = () => {
   const depertments = GetDepertmentData();
   return (
-    <div className="lg:px-32 lg:my-10 my-3 p-3">
+    <div className="lg:px-32 lg:my-10 my-3 p-3 dark:text-white">
       <h1 className=" lg:text-5xl text-2xl font-semibold my-10">
         Super Specialty <br /> Departments
       </h1>

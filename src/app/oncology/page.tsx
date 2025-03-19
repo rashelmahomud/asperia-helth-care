@@ -16,7 +16,7 @@ const OncologyPage = () => {
         <h2 className="lg:text-5xl text-3xl font-semibold text-gray-800">Oncology</h2>
       </div>
       <div>
-        <p className="lg:p-32 text-gray-600 p-3">
+        <p className="lg:p-32 text-gray-600 dark:text-white p-3">
           Asperia healthcare ltd has added a new dimension in healthcare sector
           of Bangladesh by introducing most advance cancer screening and
           management. Our oncology center provides comprehensive and super
