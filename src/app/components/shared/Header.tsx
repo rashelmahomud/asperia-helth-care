@@ -27,7 +27,7 @@ const Header = () => {
     { link: "/specialties", name: "Specialties" },
     { link: "/oncology", name: "Cancer Care" },
     { link: "/doctorall", name: "Doctors" },
-    { link: "/setting", name: "Setting" },
+    { link: "/deshboard", name: "Deshboard" },
   ];
 
   useEffect(() => {
