@@ -8,6 +8,24 @@ import ThemeToggle from "../components/shared/ThemeToggle";
 interface DeshbordType {
   children: React.ReactNode;
 }
+
+interface LinkType {
+  href: string;
+  label: string;
+  id: number;
+}
+
+const links: LinkType[] = [
+  { id: 1, href: "/deshboard/doctor", label: "Doctor" },
+  { id: 2, href: "/deshboard/login", label: "Login" },
+  { id: 3, href: "/deshboard", label: "Admin" },
+  { id: 4, href: "/deshboard", label: "Add Product" },
+  { id: 5, href: "/deshboard", label: "Appointment" },
+  { id: 6, href: "/deshboard", label: "Patient" },
+  { id: 7, href: "/deshboard", label: "Admitted" },
+  { id: 8, href: "/deshboard", label: "Login" },
+];
+
 const DeshboardLayout = ({ children }: DeshbordType) => {
   const [open, setOpen] = useState(false);
   return (
@@ -26,37 +44,20 @@ const DeshboardLayout = ({ children }: DeshbordType) => {
         {children}
       </div>
       <ul
-        className={`flex flex-col gap-5 bg-gray-100 dark:bg-dark dark:text-white lg:w-60 lg:h-screen items-center font-semibold transition-all duration-500 ease-in ${
+        className={`flex flex-col gap-5 bg-gray-100 dark:bg-dark dark:text-white lg:w-60 lg:h-screen items-center font-semibold transition-all duration-500 ease-in z-[100] ${
           open
             ? "top-[180px] bg-gray-200 right-0 w-80 absolute rounded-tl-[150px] overflow-hidden"
             : "hidden lg:block"
         }`}
       >
-        <li className="hover:bg-gray-200 text-center w-full p-2">
-          <Link href={"/deshboard/shop"}>Shop</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2">
-          <Link href={"/deshboard/login"}>Login</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2">
-          <Link href={"/deshboard"}>admin</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2">
-          <Link href={"/deshboard"}>add product</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2">
-          <Link href={"/deshboard"}>appoinment</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2">
-          <Link href={"/deshboard"}>pestion</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2">
-          <Link href={"/deshboard"}>admited</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2">
-          <Link href={"/deshboard"}>login</Link>
-        </li>
-        <li className="hover:bg-gray-300 text-center w-full p-2"></li>
+        {links.map((link) => (
+          <li
+            key={link.id}
+            className="hover:bg-gray-200 text-center w-full p-2"
+          >
+            <Link href={link.href}>{link.label}</Link>
+          </li>
+        ))}
         <li className="text-center">
           <ThemeToggle />
         </li>
