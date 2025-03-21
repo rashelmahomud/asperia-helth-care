@@ -10,8 +10,6 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { usePathname } from "next/navigation";
-import ThemeToggle from "./ThemeToggle";
-
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
 
@@ -104,9 +102,7 @@ const Header = () => {
               </li>
             ))}
 
-            <li className="mx-2">
-              <ThemeToggle />
-            </li>
+            
             <li>
               <Link href={"/apoinment"}>
                 <Button nav>Appoinment</Button>
