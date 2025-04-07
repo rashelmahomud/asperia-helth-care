@@ -17,17 +17,17 @@ const DepertmentId = () => {
   return (
     <div>
       <div
-        className={`bg-no-repeat bg-center bg-cover lg:p-32`}
+        className={`bg-no-repeat bg-center bg-cover p-32`}
         style={{ backgroundImage: `url(${depertments?.image})` }}
       >
         <div className="flex gap-5 font-semibold text-gray-700 dark:text-white">
           <Link href={"/"}>HOME</Link>/<Link href={"/doctorall"}>SERVICES</Link>
         </div>
-        <h2 className="text-5xl font-semibold text-gray-800 dark:text-white">
+        <h2 className="lg:text-5xl text-2xl font-semibold text-gray-800 dark:text-white">
           {depertments?.name}
         </h2>
       </div>
-      <div className="lg:p-32">
+      <div className="lg:p-32 p-3">
         <h1 className="font-semibold text-5xl mb-3 text-gray-700 dark:text-white">About</h1>
         <p className="text-gray-500 dark:text-white">{depertments?.dec}</p>
         <h2 className="text-5xl font-semibold my-5 text-gray-700 dark:text-white">

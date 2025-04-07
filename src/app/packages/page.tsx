@@ -5,7 +5,7 @@ import LiveChat from "../components/shared/LiveChat";
 const Packages = () => {
   return (
     <div>
-      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover lg:p-32">
+      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover p-32">
         <div className="flex gap-5 font-semibold text-gray-700">
           <Link href={"/"} className="text-gray-800">HOME</Link>/
           <Link href={"/specialties"} className="uppercase text-gray-800">

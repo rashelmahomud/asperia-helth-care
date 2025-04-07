@@ -4,7 +4,7 @@ import Depertment from "../depertment/page";
 const SpecialPage = () => {
   return (
     <div>
-      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover lg:p-32">
+      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover p-32">
         <div className="flex gap-5 font-semibold text-gray-700">
           <Link href={"/"}>HOME</Link>/<Link href={"/specialties"} className="uppercase">specialties</Link>
         </div>

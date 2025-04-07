@@ -6,7 +6,7 @@ import Service from "../service/page";
 const OncologyPage = () => {
   return (
     <div>
-      <div className="bg-[url('/asperia/onco.jpg')]  bg-no-repeat bg-cover lg:h-96 h-36  lg:p-32">
+      <div className="bg-[url('/asperia/onco.jpg')]  bg-no-repeat bg-cover lg:h-96 h-36 p-32">
         <div className="flex gap-5 font-semibold text-gray-700">
           <Link href={"/"}>HOME</Link>/
           <Link href={"/specialties"} className="uppercase">

@@ -21,7 +21,7 @@ const Doctorall = () => {
 
   return (
     <div>
-      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover lg:h-96 h-32 lg:p-32">
+      <div className="bg-[url('/asperia/page-header-bg3.jpg')]  bg-no-repeat bg-cover lg:h-96 h-32 p-32">
         <div className="flex gap-5 font-semibold text-gray-700 ">
           <Link href={"/"}>HOME</Link>/<Link href={"/doctorall"}>DOCTOR</Link>
         </div>
@@ -32,7 +32,7 @@ const Doctorall = () => {
         <div className="relative z-10">
           <form className="lg:flex gap-5 lg:ml-20 p-5">
             {/* <form onSubmit={handleSearch} className="lg:flex gap-5 lg:ml-20 p-5"> */}
-            <div className="lg:col-span-full lg:flex lg:items-center l:gap-5">
+            <div className="lg:col-span-full lg:flex lg:items-center gap-5">
               <label className="bg-gray-100 p-3 rounded-lg text-gray-500">
                 search by doctors name
               </label>
@@ -42,7 +42,7 @@ const Doctorall = () => {
                 value={query}
                 onChange={searchTitle}
                 // onChange={(e) => setSelectedDepartment(e.target.value)}
-                className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5  dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+                className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5  dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 mx-auto my-5 lg:my-0"
               >
                 <option>Filter by department</option>
                 <option value="Hematology">Hematology</option>
