@@ -67,7 +67,7 @@ const Oncology = () => {
         <div className="lg:flex my-3 gap-5 items-center">
           <Button>discover more</Button>
 
-          <div className="flex items-center gap-3 text-xl order-last">
+          <div className="flex items-center gap-3 text-xl order-last my-5 justify-between p-3">
           <Link href={'/'}><FontAwesomeIcon icon={faPhoneVolume} className="w-8 h-8 text-iconBg border rounded-full p-3 hover:text-iconBg hover:bg-primary border-4"/></Link>
 
           <div className="dark:text-white">

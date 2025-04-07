@@ -33,7 +33,7 @@ const Banner = () => {
   ];
 
   return (
-    <div className="bg-gray-300 mb-32 pt-[100px]">
+    <div className="bg-gray-300 lg:mb-[200px] mb-[400px] pt-[100px]">
       <div className="flex flex-row overflow-hidden">
         <div className="basis-1/8 ">
           <div className="bg-[url('/asperia/main-slider-shape-1.png')] h-full bg-no-repeat animate-custom-bounce duration-300">
@@ -81,7 +81,7 @@ const Banner = () => {
       <div className="lg:flex justify-center gap-10 lg:px-32 p-3 absolute -mt-16">
         {items.map((item, index) => (
           <div key={index} className="relative overflow-hidden group">
-            <div className="flex gap-3 items-center dark:bg-dark dark:text-white bg-white rounded-md p-8 w-96 shadow-md">
+            <div className="flex gap-3 items-center dark:bg-dark dark:text-white bg-white rounded-md p-8 w-96 shadow-md border lg:border-none">
               <Image
                 src={item.src}
                 width={60}

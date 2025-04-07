@@ -42,7 +42,7 @@ const Doctorall = () => {
                 value={query}
                 onChange={searchTitle}
                 // onChange={(e) => setSelectedDepartment(e.target.value)}
-                className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5  dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5  dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 "
               >
                 <option>Filter by department</option>
                 <option value="Hematology">Hematology</option>

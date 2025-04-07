@@ -7,10 +7,10 @@ const Services = () => {
     <div className="lg:px-32 mx-auto my-10 dark:bg-dark dark:text-white">
       <div className="grid lg:grid-cols-2 p-2 gap-10 justify-between">
         <div className="">
-          <h3 className="uppercase text-xl font-semibold mb-4">
+          <h3 className="uppercase text-xl font-semibold mb-4 lg:text-left text-center">
             First time in Chattogram
           </h3>
-          <h1 className="text-5xl font-bold text-gray-700 dark:text-white">
+          <h1 className="lg:text-5xl text-2xl font-bold text-gray-700 dark:text-white lg:text-left text-center">
             Super Speciality Services
           </h1>
         </div>

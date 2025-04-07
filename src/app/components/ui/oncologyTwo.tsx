@@ -66,7 +66,7 @@ const OncologyTwo = () => {
         </ul>
         <div className="lg:flex items-center my-3 gap-5">
           <Button>discover more</Button>
-          <div className="flex items-center gap-3 text-xl order-last my-2">
+          <div className="flex items-center gap-3 text-xl order-last my-5 justify-between px-3">
             <Link href={"/"}>
               <FontAwesomeIcon
                 icon={faPhoneVolume}
