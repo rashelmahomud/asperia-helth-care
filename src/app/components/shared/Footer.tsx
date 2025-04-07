@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="text-center p-10 mx-32 border-t border-gray-600  text-lightText">
+          <p className="text-center lg:p-10 p-5 lg:mx-32 border-t border-gray-600  text-lightText">
             @ All Copyright 2025 asperia.com
           </p>
         </div>
