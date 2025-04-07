@@ -17,7 +17,7 @@ const Depertment = () => {
         Super Specialty <br /> Departments
       </h1>
 
-      <div className="grid lg:grid-cols-4 gap-10 ">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 ">
         {depertments.map((depertment) => (
           <div
             key={depertment.id}
@@ -36,9 +36,7 @@ const Depertment = () => {
 
             <span className="border-b-4 w-10 mx-auto"></span>
             <Link href={`/depertment/${depertment.id}`}>
-              <h1 className="text-2xl font-semibold mt-5">
-                {depertment.name}
-              </h1>
+              <h1 className="text-2xl font-semibold mt-5">{depertment.name}</h1>
             </Link>
           </div>
         ))}

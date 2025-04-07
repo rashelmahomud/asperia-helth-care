@@ -23,7 +23,7 @@ const Doctors = () => {
         <h1 className="lg:text-4xl text-2xl my-10 font-semibold text-gray-700 dark:text-white">
           Meet Our Specialist <br /> Doctors
         </h1>
-        <div className="grid lg:grid-cols-4 my-5 lg:gap-32 gap-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 my-5 lg:gap-32 gap-10">
           {doctors.map((doctor, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="relative group">
@@ -56,7 +56,7 @@ transition-all duration-500 group-hover:rotate-0 group-hover:scale-105 group-hov
 
               <div className="mt-6 lg:p-4 text-left">
                 <Link href={`/doctors/${doctor.id}`}>
-                  <h2 className="text-2xl font-semibold text-gray-700 dark:text-white">
+                  <h2 className="lg:text-2xl font-semibold text-gray-700 dark:text-white">
                     {doctor.name}
                   </h2>
                 </Link>
