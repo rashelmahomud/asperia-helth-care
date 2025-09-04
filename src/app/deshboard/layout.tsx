@@ -17,13 +17,13 @@ interface LinkType {
 
 const links: LinkType[] = [
   { id: 1, href: "/deshboard/doctor", label: "Doctor" },
-  { id: 2, href: "/deshboard/login", label: "Login" },
+  { id: 2, href: "/deshboard", label: "custom" },
   { id: 3, href: "/deshboard", label: "Admin" },
   { id: 4, href: "/deshboard", label: "Add Product" },
   { id: 5, href: "/deshboard", label: "Appointment" },
   { id: 6, href: "/deshboard", label: "Patient" },
   { id: 7, href: "/deshboard", label: "Admitted" },
-  { id: 8, href: "/deshboard", label: "Login" },
+  { id: 8, href: "/deshboard/login", label: "Login" },
 ];
 
 const DeshboardLayout = ({ children }: DeshbordType) => {

@@ -2,7 +2,7 @@
 const DeshbordPage = () => {
     return (
         <div>
-            <h1>Deshbord page this is a page</h1>
+            <h1 className="text-2xl font-semibold">This is Deshbord Page</h1>
         </div>
     );
 };
