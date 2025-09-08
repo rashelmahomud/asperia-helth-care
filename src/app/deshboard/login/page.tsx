@@ -13,10 +13,10 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="mx-auto flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="mx-auto bg-gray-100 dark:bg-gray-900">
       <div className="w-full max-w-md p-8 space-y-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
         <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white">
-          Login to Your Account
+          Login
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -60,7 +60,7 @@ export default function LoginPage() {
         </form>
 
         <p className="text-sm text-center text-gray-600 dark:text-gray-400">
-          Don’t have an account?{" "}
+          Don’t have an account?
           <a href="/deshboard/signin" className="text-blue-600 hover:underline">
             Sign up
           </a>

@@ -23,10 +23,10 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="mx-auto flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
-      <div className="w-full max-w-md p-8 space-y-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
+    <div className="mx-auto bg-gray-100 dark:bg-gray-900">
+      <div className="w-full max-w-md p-8 lg:px-16 space-y-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
         <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white">
-          Create an Account
+          Create your Account
         </h2>
 
         <form onSubmit={handleSignUp} className="space-y-5">
