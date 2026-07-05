@@ -76,7 +76,7 @@ const Header = () => {
           </Link>
 
           <div className="">
-            <p className="font-semibold text-red-600">+8801835199061</p>
+            <p className="font-semibold text-green-600">+8801835199061</p>
 
             <span className="text-sm">hotline number</span>
           </div>
