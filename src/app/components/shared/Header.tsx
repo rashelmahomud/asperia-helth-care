@@ -23,7 +23,7 @@ const Header = () => {
     { link: "/", name: "Home" },
     { link: "/packages", name: "Packages" },
     { link: "/specialties", name: "Specialties" },
-    { link: "/oncology", name: "Cancer Care" },
+    { link: "/oncology", name: "Cancer" },
     { link: "/doctorall", name: "Doctors" },
     { link: "/deshboard", name: "Deshboard" },
   ];
@@ -76,7 +76,7 @@ const Header = () => {
           </Link>
 
           <div className="">
-            <p className="font-semibold text-green-600">+8801835199061</p>
+            <p className="font-semibold text-gray-600">+8801835199061</p>
 
             <span className="text-sm">hotline number</span>
           </div>
