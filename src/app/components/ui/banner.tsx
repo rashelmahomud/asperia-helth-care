@@ -78,7 +78,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="lg:flex justify-center gap-10 lg:px-32 p-3 absolute -mt-16">
+      <div className="lg:flex justify-center gap-10 p-3 absolute -mt-16">
         {items.map((item, index) => (
           <div key={index} className="relative overflow-hidden group">
             <div className="flex gap-3 items-center dark:bg-dark dark:text-white bg-white rounded-md p-8 w-96 shadow-md border lg:border-none">
@@ -89,7 +89,7 @@ const Banner = () => {
                 alt="icon"
                 className="bg-gray-200 rounded-full m-2 p-3"
               />
-              <h2 className="text-2xl font-bold text-center text-start">
+              <h2 className="text-2xl font-bold text-start">
                 {item.text}
               </h2>
             </div>
