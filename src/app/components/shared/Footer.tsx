@@ -12,6 +12,17 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
+const date = new Date();
+const year = date.getFullYear();
+
+const icons = [
+  faFacebook,
+  faInstagram,
+  faPinterest,
+  faTwitter
+]
+
+
 const Footer = () => {
   return (
     <div className="bg-[url('/asperia/site-footer-bg.png')] ">
@@ -30,25 +41,13 @@ const Footer = () => {
               and oncology solution.
             </p>
             <div className="flex gap-3 text-white">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="w-10 h-11 border-2 border-primary  rounded-full p-2 hover:bg-white hover:border-none hover:text-primary transition duration-500"
-              />
 
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="w-10 h-11 border-2 border-primary  rounded-full p-2 hover:bg-white hover:border-none hover:text-primary transition duration-500"
-              />
+              {
+                icons.map((icon) => (
+                  <FontAwesomeIcon key={icon.iconName} icon={icon} className="w-4 h-4 border-2 border-primary  rounded-full p-2 hover:bg-white hover:border-none hover:text-primary transition duration-500" />
+                ))
+              }
 
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="w-10 h-11 border-2 border-primary  rounded-full p-2 hover:bg-white hover:border-none hover:text-primary transition duration-500"
-              />
-
-              <FontAwesomeIcon
-                icon={faPinterest}
-                className="w-10 h-11 border-2 border-primary  rounded-full p-2 hover:bg-white hover:border-none hover:text-primary transition duration-500"
-              />
             </div>
           </div>
           <div className="col-span-2">
@@ -114,7 +113,7 @@ const Footer = () => {
 
         <div>
           <p className="text-center lg:p-10 p-5 lg:mx-32 border-t border-gray-600  text-lightText">
-            @ All Copyright 2025 asperia.com
+            @ All Copyright {year} asperia.com
           </p>
         </div>
       </div>
